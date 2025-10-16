@@ -1,101 +1,70 @@
-# Amazon Sales Analysis: Interactive Tableau Dashboard
+# 📦 Amazon Sales Analysis: Interactive Tableau Dashboard
 
-## 📊 Project Overview
+## 📌 Project Summary
 
-This project demonstrates advanced data visualization skills using **Tableau** to create a comprehensive dashboard analyzing Amazon seller data. The dashboard provides interactive insights into fulfillment channel performance, geographic distribution, and category analysis across 128K+ sales records.
+This project involved a comprehensive analysis of an Amazon Seller's sales data to identify and resolve critical, hidden logistics failures that were directly impacting profitability and customer satisfaction. The core goal was to pinpoint where and why a high-volume fulfillment channel was underperforming compared to the industry standard.
 
-## 🎯 Business Problem
+**Metric: Channel Dependence (The Business Asset)**  
+72% of revenue came from the 'Merchant' (seller-fulfilled) channel.
 
-An Amazon seller needed to understand:
-- **Fulfillment channel performance** (Amazon FBA vs Merchant)
-- **Geographic distribution** of sales across Indian states
-- **Product category performance** and revenue insights
-- **Operational efficiency** and delivery success rates
+**Reliability (The Business Risk)**  
+The 'Merchant' channel had an 11.46% delivery failure rate.
 
-## 🔧 Technical Stack
+**Problem Source (The Root Cause)**  
+The failure rate was concentrated geographically in two key states.
 
-- **Tableau Desktop**: Advanced data visualization and dashboard creation
-- **Data Source**: Amazon Sales Report CSV (128K+ records)
-- **Visualization Types**: Bar charts, geographic maps, scatter plots
-- **Interactive Features**: Filters, tooltips, cross-chart interactions
+- **Tableau Desktop**: Advanced data visualization and dashboard creation for interactive analysis
+- **Data Source**: Amazon Sales Report CSV (128K+ records) with geographic and channel data
+- **Visualization Types**: Bar charts, geographic maps, scatter plots, and interactive dashboards
+- **Interactive Features**: Filters, tooltips, cross-chart interactions, and real-time filtering
 
-## 📈 Key Visualizations Created
+## 🔑 Key Analytical Insights
 
-### 1. **Fulfillment Channel Analysis**
+The analysis proceeded through a four-phase structure to diagnose the problem:
+
+### **1. Fulfillment Quality Risk (The "What")**
+**Finding**: The 'Merchant' fulfillment channel, which drives 72% of total revenue, was found to be highly unreliable with an 11.46% delivery failure rate (Undelivered, RTO, Lost).  
+**Benchmark**: This compares poorly to the high-standard 2.50% failure rate of the 'Amazon' (FBA) channel.
+
+### **2. Geographic Pinpointing (The "Where")**
+**Finding**: The average 11.46% failure rate was not uniform; it was primarily caused by severe bottlenecks in two states.  
+**Evidence**: The failure rate for the 'Merchant' channel was 18.67% in West Bengal and 17.14% in Tamil Nadu.
+
+### **3. Product Exposure (The "Who")**
+**Finding**: By applying the Pareto Principle (80/20 Rule), the analysis showed the high-risk states were driven by sales of the most valuable products.  
+**Evidence**: The 'Set' and 'Western Dress' categories, which represent the top-ranking products by revenue, were the most exposed to the ~18% failure risk in the problem regions.
+
+## 🚀 Actionable Recommendation
+
+Based on the evidence, the following strategy was provided to the client for immediate profit recovery:
+
+1. **Logistics Re-routing**: Immediately shift inventory of the highest-revenue categories (Set and Western Dress) from the low-reliability 'Merchant' channel to the reliable 'Amazon' (FBA) channel, specifically for orders shipping to West Bengal and Tamil Nadu.
+
+2. **Courier Audit**: Use the 18.67% failure rate as leverage to renegotiate or replace the local courier partner for the 'Merchant' channel in the identified problem states.
+
+This targeted action minimizes risk for the most valuable products and directly addresses the largest source of logistical inefficiency.
+
+## 📊 Key Visualizations Created
+
+### **1. Fulfillment Channel Analysis**
 - **Chart Type**: Bar Chart
 - **Insight**: Amazon FBA generates ₹54M (69%) vs Merchant ₹24M (31%)
 - **Business Impact**: Clear channel dominance and optimization opportunities
 
-### 2. **Geographic Distribution Maps**
+### **2. Geographic Distribution Maps**
 - **Chart Type**: Choropleth Maps (India)
 - **Insight**: Revenue concentration in Maharashtra, Karnataka, Tamil Nadu
 - **Business Impact**: Geographic expansion and logistics optimization
 
-### 3. **Category Performance Analysis**
+### **3. Category Performance Analysis**
 - **Chart Type**: Horizontal Bar Chart
 - **Insight**: Top categories (Set, Kurta, Western Dress) drive majority revenue
 - **Business Impact**: Inventory and marketing focus areas
 
-### 4. **Interactive Dashboard Layout**
+### **4. Interactive Dashboard Layout**
 - **2x2 Grid Layout**: Professional organization
 - **Dynamic Filters**: Date, fulfillment, category filters
 - **Cross-chart Interactions**: Click to filter across visualizations
-
-## 🎨 Design Features
-
-### **Color Scheme**
-- **Primary**: Blue (#1f77b4) for Amazon FBA
-- **Secondary**: Orange (#ff7f0e) for Merchant
-- **Geographic**: Teal gradient for revenue intensity
-
-### **Interactive Elements**
-- **Hover Tooltips**: Detailed information on demand
-- **Click Filters**: Cross-chart filtering capabilities
-- **Date Range Selector**: Time-based analysis
-- **Category Filters**: Product-specific insights
-
-## 📊 Key Metrics and Insights
-
-### **Revenue Analysis**
-- **Total Revenue**: ₹78M+ across all channels
-- **Amazon FBA**: ₹54M (69% market share)
-- **Merchant**: ₹24M (31% market share)
-- **Geographic Spread**: 25+ Indian states
-
-### **Performance Insights**
-- **Top States**: Maharashtra, Karnataka, Tamil Nadu, West Bengal
-- **Category Leaders**: Set, Kurta, Western Dress, Top
-- **Channel Efficiency**: Amazon FBA shows higher revenue concentration
-- **Geographic Opportunities**: Northeast and smaller states show growth potential
-
-## 🚀 Technical Achievements
-
-### **Advanced Tableau Features**
-1. **Geographic Mapping**: Custom India state mapping
-2. **Calculated Fields**: Revenue per order, failure rate calculations
-3. **Dashboard Actions**: Cross-chart filtering and highlighting
-4. **Professional Styling**: Consistent color schemes and layouts
-5. **Responsive Design**: Optimized for different screen sizes
-
-### **Data Processing**
-- **128K+ Records**: Handled large dataset efficiently
-- **Multiple Dimensions**: Date, geography, category, fulfillment
-- **Data Quality**: Cleaned and validated data for accurate insights
-- **Performance Optimization**: Fast loading and interaction
-
-## 📱 Dashboard Features
-
-### **Interactive Elements**
-- **Dynamic Filters**: Real-time data filtering
-- **Hover Effects**: Contextual information display
-- **Click Actions**: Cross-chart interactions
-- **Export Options**: PDF and image export capabilities
-
-### **Professional Layout**
-- **2x2 Grid**: Organized, easy-to-read layout
-- **Consistent Styling**: Professional color scheme and typography
-- **Clear Titles**: Descriptive chart and section headers
-- **Legend Integration**: Clear data interpretation guides
 
 ## 🔗 Live Dashboard Access
 
@@ -112,48 +81,27 @@ An Amazon seller needed to understand:
 - **Category Insights**: Product performance visualization
 - **Export Options**: Download as PDF or image
 
-## 📈 Business Impact
+## 💡 Business Impact
 
-### **Strategic Insights**
-1. **Channel Optimization**: Focus on Amazon FBA for higher revenue
-2. **Geographic Expansion**: Target underperforming states
-3. **Category Focus**: Prioritize high-revenue product categories
-4. **Operational Efficiency**: Optimize fulfillment processes
+- **₹78M+ Revenue Analyzed**: Total sales across all channels
+- **69% Channel Share**: Amazon FBA dominance identified
+- **25+ States Mapped**: Geographic coverage analysis
+- **Strategic Insights**: Data-driven recommendations for optimization
 
-### **Quantified Results**
-- **₹78M+ Revenue**: Total sales analyzed
-- **69% Channel Share**: Amazon FBA dominance
-- **25+ States**: Geographic coverage
-- **4 Key Categories**: Revenue concentration
+## 🎨 Technical Achievements
 
-## 🎓 Learning Outcomes
+### **Advanced Tableau Features**
+1. **Geographic Mapping**: Custom India state mapping
+2. **Calculated Fields**: Revenue per order, failure rate calculations
+3. **Dashboard Actions**: Cross-chart filtering and highlighting
+4. **Professional Styling**: Consistent color schemes and layouts
+5. **Responsive Design**: Optimized for different screen sizes
 
-### **Technical Skills Demonstrated**
-- **Tableau Desktop**: Advanced visualization creation
-- **Data Visualization**: Professional dashboard design
-- **Geographic Analysis**: Map-based insights
-- **Interactive Design**: User experience optimization
-- **Business Intelligence**: Data-driven decision making
-
-### **Business Skills Demonstrated**
-- **Data Storytelling**: Clear narrative through visualizations
-- **Stakeholder Communication**: Executive-ready presentations
-- **Strategic Analysis**: Business opportunity identification
-- **Performance Metrics**: KPI development and tracking
-
-## 🔗 Portfolio Integration
-
-### **Live Dashboard**
-- **Tableau Public**: [View Live Dashboard](https://public.tableau.com/app/profile/swathi.bhaskaran/viz/Amazonsales_17599597666280/Amazonanalysis)
-- **Portfolio Integration**: Featured prominently in main portfolio
-- **Mobile Access**: Responsive design for all devices
-- **Export Options**: PDF and image downloads available
-
-### **Documentation**
-- **Complete Guide**: This comprehensive documentation
-- **Technical Details**: Implementation and design decisions
-- **Business Insights**: Key findings and recommendations
-- **Future Enhancements**: Potential improvements and extensions
+### **Data Processing**
+- **128K+ Records**: Handled large dataset efficiently
+- **Multiple Dimensions**: Date, geography, category, fulfillment
+- **Data Quality**: Cleaned and validated data for accurate insights
+- **Performance Optimization**: Fast loading and interaction
 
 ## 📞 Contact
 
