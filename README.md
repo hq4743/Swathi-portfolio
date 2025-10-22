@@ -2,16 +2,16 @@
 
 A modern, responsive portfolio website showcasing data engineering and analytics projects.
 
-## 🌟 Features
+ 🌟 Features
 
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Dark/Light Theme**: Toggle between light and dark modes
-- **Interactive Elements**: Smooth animations and hover effects
-- **Project Showcase**: Detailed project descriptions with metrics and technologies
-- **Contact Form**: Integrated contact form with Formspree
-- **Resume Integration**: Direct PDF viewing and download
+- Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- Dark/Light Theme**: Toggle between light and dark modes
+- Interactive Elements**: Smooth animations and hover effects
+- Project Showcase**: Detailed project descriptions with metrics and technologies
+- Contact Form**: Integrated contact form with Formspree
+- Resume Integration**: Direct PDF viewing and download
 
-## 🚀 Live Demo
+ 🚀 Live Demo
 
 Visit the live portfolio at: [https://your-username.github.io/portfolio](https://your-username.github.io/portfolio)
 
@@ -58,7 +58,7 @@ The portfolio supports both light and dark themes with:
 1. **Amazon Logistics Optimization**: DuckDB analysis with interactive dashboard
 2. **E-commerce Analytics**: 20K+ records analysis with predictive modeling
 
-## 🚀 Deployment
+ 🚀 Deployment
 
 ### GitHub Pages
 1. Fork or clone this repository
@@ -66,31 +66,11 @@ The portfolio supports both light and dark themes with:
 3. Select source branch (usually `main`)
 4. Your portfolio will be available at `https://your-username.github.io/portfolio`
 
-### Other Hosting Platforms
+ Other Hosting Platforms
 - **Netlify**: Drag and drop the folder or connect your GitHub repository
 - **Vercel**: Import your GitHub repository
 - **GitHub Pages**: Push to a repository and enable Pages
 
-## 📝 Customization
-
-### Personal Information
-Update the following in `index.html`:
-- Name and title in the hero section
-- Contact information
-- Project descriptions
-- Resume file path
-
-### Styling
-Modify `style.css` to:
-- Change color schemes in CSS custom properties
-- Adjust layout and spacing
-- Add custom animations
-
-### Projects
-Add new projects by:
-1. Creating new project cards in the projects section
-2. Adding project images to the assets folder
-3. Updating project descriptions and technologies
 
 ## 📧 Contact
 
@@ -104,6 +84,4 @@ Add new projects by:
 
 This project is open source and available under the [MIT License](LICENSE).
 
----
 
-**Note**: Remember to update the Google Analytics tracking ID and Formspree form endpoint with your own credentials before deploying.
