@@ -508,6 +508,32 @@ body {
   min-height: 600px;
 }
 
+.pdf-fallback {
+  padding: 1rem;
+  text-align: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  margin-top: 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.pdf-fallback i {
+  color: var(--secondary);
+  margin-right: 0.5rem;
+}
+
+.pdf-fallback a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pdf-fallback a:hover {
+  text-decoration: underline;
+}
+
 .resume-actions {
   flex: 1;
   display: flex;
