@@ -1,87 +1,51 @@
-# Swathi Lakshmi Bhaskaran - Portfolio
+md
+📦 Amazon Logistics Optimization Project (DuckDB & Tableau)
 
-A modern, responsive portfolio website showcasing data engineering and analytics projects.
+📌 Project Summary
 
- 🌟 Features
+This project involved a comprehensive analysis of an Amazon Seller's sales data to identify and resolve critical, hidden logistics failures that were directly impacting profitability and customer satisfaction. The core goal was to pinpoint where and why a high-volume fulfillment channel was underperforming compared to the industry standard.
 
-- Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- Dark/Light Theme**: Toggle between light and dark modes
-- Interactive Elements**: Smooth animations and hover effects
-- Project Showcase**: Detailed project descriptions with metrics and technologies
-- Contact Form**: Integrated contact form with Formspree
-- Resume Integration**: Direct PDF viewing and download
+Metric: Channel Dependence (The Business Asset) 72% of revenue came from the 'Merchant' (seller-fulfilled) channel.
 
- 🚀 Live Demo
+Reliability (The Business Risk) The 'Merchant' channel had an 11.46% delivery failure rate.
 
-Visit the live portfolio at: [https://your-username.github.io/portfolio](https://your-username.github.io/portfolio)
+Problem Source (The Root Cause) The failure rate was concentrated geographically in two key states.
 
-## 📁 Project Structure
+DuckDB: Used for fast, in-memory analysis and complex SQL aggregation on the large CSV dataset, particularly for window functions (PARTITION BY, ROW_NUMBER()).
+SQL (Advanced): Utilized Common Table Expressions (CTEs), Conditional Aggregation (SUM(CASE WHEN...)), and Window Functions for data ranking and normalization.
+Python/Pandas: Used for initial data cleaning, file format handling, and ensuring data consistency (e.g., standardizing state names).
+🔑 Key Analytical Insights
 
-```
-portfolio_clean/
-├── index.html          # Main HTML file
-├── style.css           # CSS styles and themes
-├── script.js           # JavaScript functionality
-├── amazon_dashboard.html # Amazon analytics dashboard
-├── assets/             # Static assets
-│   ├── profile.png     # Profile picture
-│   ├── swathi_resume.pdf # Resume PDF
-│   └── favicon.ico     # Website favicon
-└── README.md           # This file
-```
+The analysis proceeded through a four-phase structure to diagnose the problem:
 
-## 🛠️ Technologies Used
+Fulfillment Quality Risk (The "What") : Finding: The 'Merchant' fulfillment channel, which drives 
+72
+ of total revenue, was found to be highly unreliable with an 
+11.46
+ delivery failure rate (Undelivered, RTO, Lost). Benchmark: This compares poorly to the high-standard 
+2.50
+ failure rate of the 'Amazon' (FBA) channel.
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid and Flexbox
-- **JavaScript (ES6+)**: Interactive functionality
-- **Font Awesome**: Icons
-- **Google Analytics**: Website analytics
-- **Formspree**: Contact form handling
+**Geographic Pinpointing (The "Where") : Finding: The average 
+11.46
+ failure rate was not uniform; it was primarily caused by severe bottlenecks in two states. Evidence: The failure rate for the 'Merchant' channel was 
+18.67
+ in West Bengal and 
+17.14
+ in Tamil Nadu.
 
-## 📱 Responsive Breakpoints
+Product Exposure (The "Who") Finding: By applying the Pareto Principle (80/20 Rule), the analysis showed the high-risk states were driven by sales of the most valuable products. Evidence: The 'Set' and 'Western Dress' categories, which represent the top-ranking products by revenue, were the most exposed to the 
+∼
+18
+ failure risk in the problem regions.
 
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
+🚀 Actionable Recommendation
 
-## 🎨 Theme Support
+Based on the evidence, the following strategy was provided to the client for immediate profit recovery:
 
-The portfolio supports both light and dark themes with:
-- CSS custom properties for easy theming
-- Local storage for theme persistence
-- System preference detection
-- Smooth transitions between themes
-
-## 📊 Projects Featured
-
-1. **Amazon Logistics Optimization**: DuckDB analysis with interactive dashboard
-2. **E-commerce Analytics**: 20K+ records analysis with predictive modeling
-
- 🚀 Deployment
-
-### GitHub Pages
-1. Fork or clone this repository
-2. Enable GitHub Pages in repository settings
-3. Select source branch (usually `main`)
-4. Your portfolio will be available at `https://your-username.github.io/portfolio`
-
- Other Hosting Platforms
-- **Netlify**: Drag and drop the folder or connect your GitHub repository
-- **Vercel**: Import your GitHub repository
-- **GitHub Pages**: Push to a repository and enable Pages
-
-
-## 📧 Contact
-
-- **Email**: swathibhaskaran751@gmail.com
-- **Phone**: +1 (586) 345-2924
-- **Location**: Clinton Township, MI
-- **LinkedIn**: [swathi-bhaskaran96](https://www.linkedin.com/in/swathi-bhaskaran96/)
-- **GitHub**: [hq4743](https://github.com/hq4743)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
+Logistics Re-routing: Immediately shift inventory of the highest-revenue categories (Set and Western Dress) from the low-reliability 'Merchant' channel to the reliable 'Amazon' (FBA) channel, specifically for orders shipping to West Bengal and Tamilnadu
+Courier Audit: Use the 
+18.67
+ failure rate as leverage to renegotiate or replace the local courier partner for the 'Merchant' channel in the identified problem states.
+This targeted action minimizes risk for the most valuable products and directly addresses the largest source of logistical inefficiency.
 
